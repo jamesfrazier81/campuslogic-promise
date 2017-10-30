@@ -1,0 +1,257 @@
+// Dark and light overlays to sections with background images
+.overlay-dark {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(black, 0.75);
+	padding: 0;
+	margin: 0;
+}
+
+.overlay-light {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(white, 0.75);
+	padding: 0;
+	margin: 0;
+}
+
+// Content
+.welcome {
+	background-color: $color-purple;
+	padding: 120px 0 0 0;
+	position: relative;
+
+	.container {
+		height: 100%;
+
+		.row {
+			height: 100%;
+			color: white;
+
+			.col-sm-6 {
+				height: 100%;
+
+				&.content {
+					.social {
+						display: flex;
+						list-style: none;
+						margin: 30px 0 0 0;
+						padding: 0 0 40px 0;
+
+						li {
+							margin: 0 20px 0 0;
+
+							&:nth-child(1) a {
+								padding: 14px 20px;
+							}
+
+							&:nth-child(2) a {
+								padding: 15px 16px;
+							}
+
+							&:nth-child(3) a {
+								margin: 0;
+								padding: 14px;
+							}
+
+							a {
+								display: block;
+								border: 2px solid white;
+								border-radius: 50%;
+								width: 60px;
+								height: 60px;
+								padding: 10px;
+
+								.fa {
+									display: inline-block;
+									font-size: 1.75rem;
+									font-family: $font-awesome;
+									color: white;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.leaves-icon {
+				position: absolute;
+				bottom: 0;
+				right: 10%;
+				min-width: 300px;
+				min-height: 300px;
+				background-image: url(/img/dist/icon-promise-white.png);
+				background-size: 300px;
+				background-position: bottom right;
+				background-repeat: no-repeat;
+			}
+		}
+	}
+}
+
+.maintain {
+	height: 40vh;
+	background-image: url(/img/dist/promise-maintain-eligibility-1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	border-bottom: 4px solid $color-yellow;
+
+	.container-fluid {
+		height: 100%;
+
+		.row {
+			height: 100%;
+			color: white;
+
+			.col-sm-12 {
+				height: 100%;
+				text-align: center;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				align-content: center;
+			}
+		}
+	}
+}
+
+.one-col-section.simple {
+	.container .row {
+		padding: 50px 0;
+	}
+}
+
+.two-col-section {
+	.container-fluid .row {
+		.col-sm-6 {
+			padding: 0;
+
+			.section-img {
+				border-left: 1px solid white;
+				border-right: 1px solid white;
+
+				img {
+					width: 100%;
+					height: auto;
+					display: block;
+				}
+			}
+
+			.section-content {
+				padding: 50px;
+
+			}
+		}
+	}
+}
+
+.accordion-section {
+	background-color: $color-gray-light;
+
+	.container-fluid {
+		padding: 50px 15px;
+
+		.row {
+			.col-sm-12 {
+				text-align: center;
+				margin-bottom: 30px;
+			}
+
+			.col-sm-6 {
+				padding: 0 50px;
+
+				#accordion {
+
+					// Toggler
+					.card-header {
+						h5 {
+							display: block;
+							width: 100%;
+							font-family: $font-main;
+							
+							a {
+								background-color: $color-gray-dark;
+								display: block;
+								width: 100%;
+								padding: 15px;
+								color: white;
+								transition: all 0.25s ease-in-out;
+
+								&:hover, &:active, &:visited, &:focus {
+									text-decoration: none;
+									background-color: $color-purple;
+								}
+							}
+						}
+					}
+
+					// Content
+					.card-body {
+						padding: 15px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $media-tablet) {
+	.welcome {
+		.container .row {
+			.col-sm-6 {
+				&.content {
+					.social li a {
+
+					}
+				}
+			}
+
+			.leaves-icon {
+				opacity: 0.15;
+			}
+		}
+	}
+
+	.one-col-section.simple {
+		.container .row {
+			padding: 30px 0;
+		}
+	}
+
+	.two-col-section {
+		.container-fluid .row {
+			.col-sm-6 {
+				.section-img {
+					border: none;
+				}
+				
+				.section-content {
+					padding: 30px 15px;
+
+				}
+			}
+		}
+	}
+
+	.accordion-section {
+		background-color: $color-gray-light;
+
+		.container-fluid {
+			padding: 30px 15px;
+
+			.row {
+				.col-sm-12 {
+					text-align: center;
+					margin-bottom: 30px;
+				}
+
+				.col-sm-6 {
+					padding: 0 15px;
+				}
+			}
+		}
+	}
+}

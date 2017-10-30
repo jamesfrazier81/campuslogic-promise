@@ -1,0 +1,71 @@
+html, body {
+	font-family: $font-main;
+	font-size: 16px;
+	
+	h1, h2, h3, h4, h5, h6 {
+		font-family: $font-title;
+		text-transform: uppercase;
+	}
+
+	h1 {
+		font-size: 3rem;
+	}
+
+	h2 {
+		font-size: 2.25rem;
+	}
+
+	h3 {
+		font-size: 2rem;
+	}
+
+	h4 {
+		font-size: 1.5rem;
+	}
+
+	h5, h6 {
+		font-size: 1rem;
+	}
+
+	p, span, li, a {
+		font-size: 1rem;
+	}
+
+	a {
+		color: $color-purple;
+		font-weight: 900;
+	}
+
+	.row {
+		> h1, h2, h3, h4, h5, h6 {
+			margin-top: 0;
+		}
+	}
+
+	.btn {
+		margin-top: 20px;
+		border: 1px solid $color-purple;
+		background-color: white;
+		color: $color-purple;
+		text-transform: uppercase;
+		font-weight: 900;
+		transition: all 0.25s ease-in-out;
+
+		&:hover {
+			background-color: $color-purple;
+			color: white;
+		}
+	}
+
+	.tool-tip {
+		.tooltip > .tooltip-inner {
+			background-color: $color-purple;
+		}		
+	}
+}
+
+@media screen and (max-width: $media-mobile) {
+	html, body {
+		font-size: 14px;
+	}
+}

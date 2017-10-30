@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,800|Oswald:400,700");
+html, body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px; }
+  html h1, html h2, html h3, html h4, html h5, html h6, body h1, body h2, body h3, body h4, body h5, body h6 {
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase; }
+  html h1, body h1 {
+    font-size: 3rem; }
+  html h2, body h2 {
+    font-size: 2.25rem; }
+  html h3, body h3 {
+    font-size: 2rem; }
+  html h4, body h4 {
+    font-size: 1.5rem; }
+  html h5, html h6, body h5, body h6 {
+    font-size: 1rem; }
+  html p, html span, html li, html a, body p, body span, body li, body a {
+    font-size: 1rem; }
+  html a, body a {
+    color: #702e7d;
+    font-weight: 900; }
+  html .row > h1, html .row h2, html .row h3, html .row h4, html .row h5, html .row h6, body .row > h1, body .row h2, body .row h3, body .row h4, body .row h5, body .row h6 {
+    margin-top: 0; }
+  html .btn, body .btn {
+    margin-top: 20px;
+    border: 1px solid #702e7d;
+    background-color: white;
+    color: #702e7d;
+    text-transform: uppercase;
+    font-weight: 900;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out; }
+    html .btn:hover, body .btn:hover {
+      background-color: #702e7d;
+      color: white; }
+  html .tool-tip .tooltip > .tooltip-inner, body .tool-tip .tooltip > .tooltip-inner {
+    background-color: #702e7d; }
+
+@media screen and (max-width: 480px) {
+  html, body {
+    font-size: 14px; } }
+
+.header {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-top: 4px solid #702e7d; }
+  .header .container-fluid .row .logo {
+    max-width: 200px;
+    margin: 0 auto;
+    padding: 8px;
+    background-color: white;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); }
+    .header .container-fluid .row .logo img {
+      display: block;
+      width: 100%;
+      height: auto; }
+
+.overlay-dark {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 0;
+  margin: 0; }
+
+.overlay-light {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 0;
+  margin: 0; }
+
+.welcome {
+  background-color: #702e7d;
+  padding: 120px 0 0 0;
+  position: relative; }
+  .welcome .container {
+    height: 100%; }
+    .welcome .container .row {
+      height: 100%;
+      color: white; }
+      .welcome .container .row .col-sm-6 {
+        height: 100%; }
+        .welcome .container .row .col-sm-6.content .social {
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: flex;
+          list-style: none;
+          margin: 30px 0 0 0;
+          padding: 0 0 40px 0; }
+          .welcome .container .row .col-sm-6.content .social li {
+            margin: 0 20px 0 0; }
+            .welcome .container .row .col-sm-6.content .social li:nth-child(1) a {
+              padding: 14px 20px; }
+            .welcome .container .row .col-sm-6.content .social li:nth-child(2) a {
+              padding: 15px 16px; }
+            .welcome .container .row .col-sm-6.content .social li:nth-child(3) a {
+              margin: 0;
+              padding: 14px; }
+            .welcome .container .row .col-sm-6.content .social li a {
+              display: block;
+              border: 2px solid white;
+              -moz-border-radius: 50%;
+              border-radius: 50%;
+              width: 60px;
+              height: 60px;
+              padding: 10px; }
+              .welcome .container .row .col-sm-6.content .social li a .fa {
+                display: inline-block;
+                font-size: 1.75rem;
+                font-family: FontAwesome;
+                color: white; }
+      .welcome .container .row .leaves-icon {
+        position: absolute;
+        bottom: 0;
+        right: 10%;
+        min-width: 300px;
+        min-height: 300px;
+        background-image: url(/img/dist/icon-promise-white.png);
+        -moz-background-size: 300px;
+        background-size: 300px;
+        background-position: bottom right;
+        background-repeat: no-repeat; }
+
+.maintain {
+  height: 40vh;
+  background-image: url(/img/dist/promise-maintain-eligibility-1.jpg);
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  border-bottom: 4px solid #f7a03b; }
+  .maintain .container-fluid {
+    height: 100%; }
+    .maintain .container-fluid .row {
+      height: 100%;
+      color: white; }
+      .maintain .container-fluid .row .col-sm-12 {
+        height: 100%;
+        text-align: center;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-line-pack: center;
+        align-content: center; }
+
+.one-col-section.simple .container .row {
+  padding: 50px 0; }
+
+.two-col-section .container-fluid .row .col-sm-6 {
+  padding: 0; }
+  .two-col-section .container-fluid .row .col-sm-6 .section-img {
+    border-left: 1px solid white;
+    border-right: 1px solid white; }
+    .two-col-section .container-fluid .row .col-sm-6 .section-img img {
+      width: 100%;
+      height: auto;
+      display: block; }
+  .two-col-section .container-fluid .row .col-sm-6 .section-content {
+    padding: 50px; }
+
+.accordion-section {
+  background-color: #dedede; }
+  .accordion-section .container-fluid {
+    padding: 50px 15px; }
+    .accordion-section .container-fluid .row .col-sm-12 {
+      text-align: center;
+      margin-bottom: 30px; }
+    .accordion-section .container-fluid .row .col-sm-6 {
+      padding: 0 50px; }
+      .accordion-section .container-fluid .row .col-sm-6 #accordion .card-header h5 {
+        display: block;
+        width: 100%;
+        font-family: "Open Sans", sans-serif; }
+        .accordion-section .container-fluid .row .col-sm-6 #accordion .card-header h5 a {
+          background-color: #383531;
+          display: block;
+          width: 100%;
+          padding: 15px;
+          color: white;
+          -webkit-transition: all 0.25s ease-in-out;
+          -moz-transition: all 0.25s ease-in-out;
+          transition: all 0.25s ease-in-out; }
+          .accordion-section .container-fluid .row .col-sm-6 #accordion .card-header h5 a:hover, .accordion-section .container-fluid .row .col-sm-6 #accordion .card-header h5 a:active, .accordion-section .container-fluid .row .col-sm-6 #accordion .card-header h5 a:visited, .accordion-section .container-fluid .row .col-sm-6 #accordion .card-header h5 a:focus {
+            text-decoration: none;
+            background-color: #702e7d; }
+      .accordion-section .container-fluid .row .col-sm-6 #accordion .card-body {
+        padding: 15px; }
+
+@media screen and (max-width: 767px) {
+  .welcome .container .row .leaves-icon {
+    opacity: 0.15; }
+  .one-col-section.simple .container .row {
+    padding: 30px 0; }
+  .two-col-section .container-fluid .row .col-sm-6 .section-img {
+    border: none; }
+  .two-col-section .container-fluid .row .col-sm-6 .section-content {
+    padding: 30px 15px; }
+  .accordion-section {
+    background-color: #dedede; }
+    .accordion-section .container-fluid {
+      padding: 30px 15px; }
+      .accordion-section .container-fluid .row .col-sm-12 {
+        text-align: center;
+        margin-bottom: 30px; }
+      .accordion-section .container-fluid .row .col-sm-6 {
+        padding: 0 15px; } }
+
+.footer {
+  background-color: #702e7d; }
+  .footer .container-fluid .row {
+    padding: 15px; }
+    .footer .container-fluid .row p {
+      color: white;
+      margin: 0; }
